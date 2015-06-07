@@ -249,10 +249,10 @@ def process(args):
             r['statusName'] = phlcon_maniphest.STATUSES[int(r['status'])]
 
     # initialise to format for 'args.format_short'
-    output_format = "{id} / {statusName} / {priority} / {title}"
+    output_format = u"{id} / {statusName} / {priority} / {title}"
 
     if args.format_ids:
-        output_format = "{id}"
+        output_format = u"{id}"
     elif args.format_string is not None:
         output_format = args.format_string
 
